@@ -1,0 +1,10 @@
+ft_lstmap, todo el mundo hace un while lst y añade los elementos con ft_lstadd_back, pero eso recorre la lista 
+	por cada elemento que añade. Si hubiera miles, sería eterno. 
+	Yo creo el primero y luego voy añadiendo. Tengo que usar 2 funciones por el problema de 25 líneas. 
+ft_strlcat: I apply the rule: note that strlcat() only operate on true ''C'' strings. This means that both src and dst must be NULL-terminated.
+ft_substr: Len is MAX len, so, I have to acept a len longer than string. If start is out of bound, I set len = 0 to return an empty sting
+
+Git auto-pull on VS start:
+- A VS Code task `Git: Pull all repos` runs `scripts/git-pull-all.sh` on folder open.
+- To preview actions without network changes set `DRY_RUN=1` (e.g. `DRY_RUN=1 code .`).
+- To disable auto-run, remove or edit the task in `.vscode/tasks.json`.
