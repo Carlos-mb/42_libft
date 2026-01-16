@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: cmelero- <cmelero-@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/01/09 19:14:31 by cmelero-          #+#    #+#              #
-#    Updated: 2026/01/16 12:44:52 by cmelero-         ###   ########.fr        #
+#    Created: 2026/01/16 13:31:11 by cmelero-          #+#    #+#              #
+#    Updated: 2026/01/16 13:38:35 by cmelero-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -67,11 +67,10 @@ RM = rm -f
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@ar -rcs $(NAME) $(OBJ) || { @echo "Error creating $(NAME) $(OBJ)"; exit 1; }	
-	@echo "$(NAME) created" 
-
-%.o: %.c $(HEADER)
-	cc $(FLAG) -c $< -o $@
+	$(AR) $@ $^
+	
+%.o: %.c $(INCLUDE)
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	$(RM) $(OBJ)
@@ -79,6 +78,4 @@ clean:
 fclean: clean
 	$(RM) $(NAME)
 
-re: fclean all
-
-.PHONY: all clean fclean re
+re: fclean all 
