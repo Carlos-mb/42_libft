@@ -38,3 +38,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
+/*
+int main(void)
+{
+	ft_strnstr(((void*)0), "fake", 2);
+}*/

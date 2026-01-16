@@ -72,8 +72,6 @@ $(NAME): $(OBJ)
 %.o: %.c $(HEADER)
 	cc $(FLAG) -c $< -o $@
 
-bonus: $(NAME)
-
 clean:
 	@rm -f $(OBJ) || { @echo "Error removing $(OBJ)"; exit 1; }
 	@echo "OBJ removed"
@@ -84,4 +82,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: all clean fclean re bonus
+.PHONY: all clean fclean re
