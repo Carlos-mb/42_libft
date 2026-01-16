@@ -6,15 +6,15 @@
 /*   By: cmelero- <cmelero-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 18:25:36 by cmelero-          #+#    #+#             */
-/*   Updated: 2026/01/12 15:16:19 by cmelero-         ###   ########.fr       */
+/*   Updated: 2026/01/16 09:16:45 by cmelero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-
-# include <string.h>
+# include <stddef.h>
 # include <stdlib.h>
+# include <unistd.h>
 
 typedef struct s_list
 {
