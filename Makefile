@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: cmelero- <cmelero-@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/01/16 13:31:11 by cmelero-          #+#    #+#              #
-#    Updated: 2026/01/16 13:38:35 by cmelero-         ###   ########.fr        #
+#    Created: 2026/01/09 19:14:31 by cmelero-          #+#    #+#              #
+#    Updated: 2026/01/16 14:41:47 by cmelero-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -78,4 +78,4 @@ clean:
 fclean: clean
 	$(RM) $(NAME)
 
-re: fclean all 
+re: fclean all
