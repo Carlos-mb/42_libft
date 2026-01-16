@@ -6,7 +6,7 @@
 /*   By: cmelero- <cmelero-@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 18:21:30 by cmelero-          #+#    #+#             */
-/*   Updated: 2026/01/12 15:15:52 by cmelero-         ###   ########.fr       */
+/*   Updated: 2026/01/16 09:14:58 by cmelero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,11 +114,3 @@ char	**ft_split(const char *s, char c)
 	free(mys);
 	return (output);
 }
-
-/*
-int main(void)
-{
-	char **tab = ft_split("\0aa\0bbb", 0);
-	free(tab);
-}
-*/
