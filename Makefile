@@ -6,7 +6,7 @@
 #    By: cmelero- <cmelero-@student.42madrid.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/09 19:14:31 by cmelero-          #+#    #+#              #
-#    Updated: 2026/01/16 09:10:53 by cmelero-         ###   ########.fr        #
+#    Updated: 2026/01/16 11:17:33 by cmelero-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -67,18 +67,11 @@ RM = rm -f
 all: $(NAME)
 
 $(NAME): $(OBJ)
-<<<<<<< HEAD
 	@ar -rcs $(NAME) $(OBJ) || { @echo "Error creating $(NAME) $(OBJ)"; exit 1; }	
 	@echo "$(NAME) created" 
 
 %.o: %.c $(HEADER)
 	cc $(FLAG) -c $< -o $@
-=======
-	$(AR) $@ $^
-	
-%.o: %.c $(INCLUDE)
-	$(CC) $(CFLAGS) -c $< -o $@
->>>>>>> bf1bbc6d15b931502886169aa7eda81ab1d6ca4c
 
 clean:
 	$(RM) $(OBJ)
@@ -86,10 +79,6 @@ clean:
 fclean: clean
 	$(RM) $(NAME)
 
-<<<<<<< HEAD
 re: fclean all
 
 .PHONY: all clean fclean re
-=======
-re: fclean all
->>>>>>> bf1bbc6d15b931502886169aa7eda81ab1d6ca4c

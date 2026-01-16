@@ -1,2 +1,6 @@
-42_libft.code-workspace
-a.out
+*
+!*.c
+!*.h
+!Makefile
+!README.md
+!/.gitignore
